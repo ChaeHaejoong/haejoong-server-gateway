@@ -9,12 +9,3 @@ services:
       - "3000:3000"
     volumes:
       - ./logs:/var/log/nginx
-    networks:
-      - haejoong.com-network
-      - courtcheck-network
-
-networks:
-  haejoong.com-network:
-    external: true
-  courtcheck-network:
-    external: true

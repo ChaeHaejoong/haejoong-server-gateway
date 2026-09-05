@@ -9,3 +9,7 @@ services:
       - "3000:3000"
     volumes:
       - ./logs:/var/log/nginx
+
+networks:
+  gateway:
+    external: true
